@@ -407,7 +407,7 @@ async function main() {
 <h2>The Foundation of Professional Traffic Management</h2>
 <p>Professional traffic management begins with proper certification and training. Our team holds all necessary RMS qualifications.</p>`,
       slug: "why-traffic-management-standards-matter",
-      publishedAt: oneWeekAgo.toISOString(),
+      published: oneWeekAgo.toISOString(),
       category: "safety",
       author: "NSW Traffic Control Team",
       featured: false
@@ -417,7 +417,7 @@ async function main() {
       excerpt: "Discover why professional traffic management companies are essential for modern construction projects and how they protect both workers and the public.",
       content: `<p>In today's fast-paced construction environment, one factor stands above all others when it comes to project success: safety. This is the number one reason why traffic management companies are not just helpful, but absolutely indispensable.</p>`,
       slug: "traffic-management-companies-indispensable",
-      publishedAt: twoWeeksAgo.toISOString(),
+      published: twoWeeksAgo.toISOString(),
       category: "industry-news",
       author: "NSW Traffic Control Team",
       featured: false
@@ -427,7 +427,7 @@ async function main() {
       excerpt: "A comprehensive guide to understanding the services and responsibilities of professional traffic control companies in NSW.",
       content: `<p>Traffic control companies play a vital role in maintaining safety and efficiency when construction work intersects with public roadways.</p>`,
       slug: "what-traffic-control-companies-do",
-      publishedAt: oneMonthAgo.toISOString(),
+      published: oneMonthAgo.toISOString(),
       category: "industry-news",
       author: "NSW Traffic Control Team",
       featured: true
@@ -437,7 +437,7 @@ async function main() {
       excerpt: "Explore the top advantages of partnering with professional traffic control companies for your Sydney construction projects.",
       content: `<p>Sydney's bustling construction industry demands the highest levels of safety and efficiency.</p>`,
       slug: "benefits-traffic-control-companies-sydney",
-      publishedAt: twoMonthsAgo.toISOString(),
+      published: twoMonthsAgo.toISOString(),
       category: "industry-news",
       author: "NSW Traffic Control Team",
       featured: false
@@ -447,7 +447,7 @@ async function main() {
       excerpt: "Stay up to date with the latest changes to NSW traffic control regulations and how they impact your construction projects.",
       content: `<p>The NSW traffic control regulatory landscape continues to evolve, with several important changes taking effect recently.</p>`,
       slug: "traffic-control-regulations-nsw-updates",
-      publishedAt: threeMonthsAgo.toISOString(),
+      published: threeMonthsAgo.toISOString(),
       category: "safety",
       author: "NSW Traffic Control Team",
       featured: false
@@ -458,7 +458,7 @@ async function main() {
       content: `<h1>Emergency Traffic Management: Best Practices</h1>
 <p>Emergency situations require immediate and effective traffic management responses.</p>`,
       slug: "emergency-traffic-management-best-practices",
-      publishedAt: new Date(threeMonthsAgo.getTime() - 7 * 24 * 60 * 60 * 1000).toISOString(),
+      published: new Date(threeMonthsAgo.getTime() - 7 * 24 * 60 * 60 * 1000).toISOString(),
       category: "safety",
       author: "NSW Traffic Control Team",
       featured: false
