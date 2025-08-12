@@ -5,7 +5,7 @@
     "singularName": "faq",
     "pluralName": "faqs",
     "displayName": "FAQ",
-    "description": "Frequently asked questions"
+    "description": "Frequently Asked Questions for the website"
   },
   "options": {
     "draftAndPublish": true
@@ -14,24 +14,29 @@
   "attributes": {
     "question": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 255
     },
     "answer": {
-      "type": "richtext",
+      "type": "text",
       "required": true
     },
     "category": {
       "type": "enumeration",
-      "enum": ["general", "technical", "billing", "support"],
+      "enum": ["general", "services", "emergency", "pricing", "equipment", "support"],
       "default": "general"
-    },
-    "featured": {
-      "type": "boolean",
-      "default": false
     },
     "sortOrder": {
       "type": "integer",
       "default": 0
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
