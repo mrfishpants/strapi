@@ -4,7 +4,8 @@
   "info": {
     "singularName": "service",
     "pluralName": "services",
-    "displayName": "Service"
+    "displayName": "Service",
+    "description": "Company services and offerings"
   },
   "options": {
     "draftAndPublish": true
@@ -15,43 +16,38 @@
       "type": "string",
       "required": true,
       "minLength": 3,
-      "maxLength": 100,
-      "column": {
-        "notNullable": true
-      }
+      "maxLength": 100
     },
     "slug": {
       "type": "uid",
       "required": true,
-      "column": {
-        "unique": true
-      },
       "targetField": "name"
     },
     "shortDescription": {
       "type": "string",
       "required": true,
-      "maxLength": 200,
-      "column": {
-        "notNullable": true
-      }
+      "maxLength": 200
     },
     "fullDescription": {
       "type": "richtext"
     },
     "icon": {
       "type": "media",
-      "multiple": true,
-      "allowedTypes": ["images", "files", "videos", "audios"]
+      "multiple": false,
+      "allowedTypes": ["images"]
     },
     "features": {
       "type": "json"
     },
     "sortOrder": {
-      "type": "integer"
+      "type": "integer",
+      "required": true,
+      "default": 0
     },
     "isActive": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true,
+      "default": true
     },
     "featured": {
       "type": "boolean",
