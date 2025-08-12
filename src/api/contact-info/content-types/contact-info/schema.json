@@ -1,0 +1,80 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_infos",
+  "info": {
+    "singularName": "contact-info",
+    "pluralName": "contact-infos",
+    "displayName": "Contact Info",
+    "description": "Centralized contact information for the entire website"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "phoneNumber": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20,
+      "default": "0407 410 223"
+    },
+    "phoneNumberFormatted": {
+      "type": "string",
+      "required": false,
+      "maxLength": 30,
+      "default": "(0407) 410-223"
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "default": "admin@nswtrafficcontrol.com.au"
+    },
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "suburb": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": ["NSW", "VIC", "QLD", "WA", "SA", "TAS", "ACT", "NT"],
+      "default": "NSW",
+      "required": true
+    },
+    "postcode": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "default": "Australia"
+    },
+    "abn": {
+      "type": "string",
+      "required": false,
+      "maxLength": 20,
+      "default": "123 456 789"
+    },
+    "emergencyPhone": {
+      "type": "string",
+      "required": false,
+      "maxLength": 20
+    },
+    "officeHours": {
+      "type": "text",
+      "required": false,
+      "default": "Monday-Friday: 7:00 AM - 5:00 PM\nSaturday-Sunday: 24/7 Emergency Service"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    }
+  }
+}
