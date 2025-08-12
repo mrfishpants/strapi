@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "website_settings",
+  "info": {
+    "singularName": "website-settings",
+    "pluralName": "website-settings-global",
+    "displayName": "Website Settings",
+    "description": "Global settings and static content for the website"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "website.hero-section"
+    },
+    "ctaButtons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "website.cta-button"
+    },
+    "footerLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "website.footer-link"
+    },
+    "seoDefaults": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.defaults"
+    },
+    "maintenanceMode": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "announcement": {
+      "type": "component",
+      "repeatable": false,
+      "component": "website.announcement-banner"
+    }
+  }
+}

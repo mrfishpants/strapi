@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_page_settings",
+  "info": {
+    "singularName": "about-page-setting",
+    "pluralName": "about-page-settings",
+    "displayName": "About Page Settings",
+    "description": "Content settings for the About page sections"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "whoWeAre": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-sections.hero-section"
+    },
+    "coreValuesSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-sections.section-header"
+    },
+    "ourStory": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-sections.story-section"
+    },
+    "testimonialsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-sections.section-header"
+    },
+    "teamSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-sections.section-header"
+    }
+  }
+}

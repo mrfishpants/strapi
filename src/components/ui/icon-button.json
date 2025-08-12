@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_ui_icon_buttons",
+  "info": {
+    "displayName": "Icon Button",
+    "description": "Button with icon and text"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "required": true,
+      "default": "Shield"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "secondary"
+    }
+  }
+}

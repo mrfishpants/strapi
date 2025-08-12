@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_addresses",
+  "info": {
+    "displayName": "Address",
+    "icon": "map-marker-alt"
+  },
+  "options": {},
+  "attributes": {
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "suburb": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": ["NSW", "VIC", "QLD", "WA", "SA", "TAS", "ACT", "NT"],
+      "default": "NSW",
+      "required": true
+    },
+    "postcode": {
+      "type": "string",
+      "required": true,
+      "regex": "^[0-9]{4}$"
+    },
+    "country": {
+      "type": "string",
+      "default": "Australia"
+    }
+  }
+}

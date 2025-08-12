@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_page_sections_section_headers",
+  "info": {
+    "displayName": "Section Header",
+    "description": "Reusable section with title and subtitle"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_website_footer_links",
+  "info": {
+    "displayName": "Footer Link",
+    "description": "Links for website footer sections"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "section": {
+      "type": "enumeration",
+      "enum": ["Services", "Company", "Resources", "Legal"],
+      "default": "Services"
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

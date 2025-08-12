@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "services_page_settings",
+  "info": {
+    "singularName": "services-page-setting",
+    "pluralName": "services-page-settings",
+    "displayName": "Services Page Settings",
+    "description": "Content settings for the Services page sections"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "servicesSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-sections.section-header",
+      "required": true
+    },
+    "howWeWorkSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-sections.section-header",
+      "required": true
+    }
+  }
+}

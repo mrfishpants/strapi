@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_social_media",
+  "info": {
+    "displayName": "Social Media",
+    "icon": "share-alt"
+  },
+  "options": {},
+  "attributes": {
+    "facebook": {
+      "type": "string",
+      "regex": "^https?://.*facebook\\.com/.*$"
+    },
+    "linkedin": {
+      "type": "string",
+      "regex": "^https?://.*linkedin\\.com/.*$"
+    },
+    "instagram": {
+      "type": "string",
+      "regex": "^https?://.*instagram\\.com/.*$"
+    },
+    "twitter": {
+      "type": "string",
+      "regex": "^https?://.*twitter\\.com/.*$"
+    },
+    "youtube": {
+      "type": "string",
+      "regex": "^https?://.*youtube\\.com/.*$"
+    }
+  }
+}

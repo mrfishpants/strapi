@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_website_announcement_banners",
+  "info": {
+    "displayName": "Announcement Banner",
+    "description": "Site-wide announcement banner"
+  },
+  "options": {},
+  "attributes": {
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["info", "warning", "success", "error"],
+      "default": "info"
+    },
+    "link": {
+      "type": "string"
+    },
+    "linkText": {
+      "type": "string",
+      "default": "Learn more"
+    },
+    "dismissible": {
+      "type": "boolean",
+      "default": true
+    },
+    "expiryDate": {
+      "type": "datetime"
+    }
+  }
+}

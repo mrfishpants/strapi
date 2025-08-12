@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "careers_page_settings",
+  "info": {
+    "singularName": "careers-page-setting",
+    "pluralName": "careers-page-settings",
+    "displayName": "Careers Page Settings",
+    "description": "Manage content for the careers page sections"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-sections.hero-section"
+    },
+    "openingsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-sections.section-header"
+    },
+    "cultureSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-sections.section-header"
+    },
+    "benefitsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-sections.section-header"
+    },
+    "applicationProcessSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-sections.section-header"
+    },
+    "faqSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-sections.section-header"
+    }
+  }
+}

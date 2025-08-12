@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_studies",
+  "info": {
+    "singularName": "case-study",
+    "pluralName": "case-studies",
+    "displayName": "Case Study",
+    "description": "Client case studies and success stories"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "client": {
+      "type": "string",
+      "required": true
+    },
+    "industry": {
+      "type": "enumeration",
+      "enum": ["transportation", "logistics", "construction", "infrastructure"],
+      "required": true
+    },
+    "challenge": {
+      "type": "richtext",
+      "required": true
+    },
+    "solution": {
+      "type": "richtext",
+      "required": true
+    },
+    "results": {
+      "type": "richtext",
+      "required": true
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "testimonial": {
+      "type": "text",
+      "required": false
+    }
+  }
+}

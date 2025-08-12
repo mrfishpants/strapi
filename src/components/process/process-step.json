@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_process_process_steps",
+  "info": {
+    "displayName": "Process Step",
+    "description": "Individual step in a process workflow",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 50
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "minLength": 10,
+      "maxLength": 200
+    },
+    "icon": {
+      "type": "string",
+      "required": true,
+      "default": "CheckCircle",
+      "regex": "^[A-Z][a-zA-Z0-9]*$"
+    },
+    "details": {
+      "type": "json",
+      "required": true
+    },
+    "sortOrder": {
+      "type": "integer",
+      "required": true,
+      "default": 1,
+      "min": 1,
+      "max": 10
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_website_cta_buttons",
+  "info": {
+    "displayName": "CTA Button",
+    "description": "Call to action button configuration"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": ["primary", "secondary", "outline"],
+      "default": "primary"
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": ["none", "arrow-right", "phone", "email", "download"],
+      "default": "none"
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
