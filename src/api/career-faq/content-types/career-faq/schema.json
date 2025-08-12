@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "career_faqs",
+  "info": {
+    "singularName": "career-faq",
+    "pluralName": "career-faqs",
+    "displayName": "Career FAQs",
+    "description": "Frequently asked questions about careers"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true,
+      "maxLength": 500
+    },
+    "answer": {
+      "type": "text",
+      "required": true,
+      "maxLength": 2000
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["general", "application", "benefits", "training", "schedule"],
+      "default": "general"
+    },
+    "sortOrder": {
+      "type": "integer",
+      "required": true,
+      "default": 1
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
