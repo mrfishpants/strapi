@@ -71,7 +71,7 @@ async function main() {
   
   let totalCreated = 0;
   
-  // 1. Services (3 real services from original CMS)
+  // 1. Services (7 services matching website fallback data)
   const services = [
     {
       name: "Construction Traffic Control",
@@ -102,50 +102,51 @@ async function main() {
       sortOrder: 3,
       isActive: true,
       featured: true
+    },
+    {
+      name: "Specialized Traffic Solutions",
+      slug: "specialized-traffic-solutions",
+      shortDescription: "Custom traffic solutions for specialized requirements",
+      fullDescription: "Custom traffic management for unique situations including oversize vehicle escorts, utility works, and complex urban projects.",
+      features: ["Oversize vehicle escorts", "Utility work coordination", "Complex urban projects", "Multi-lane closures", "Bridge and tunnel work"],
+      sortOrder: 4,
+      isActive: true,
+      featured: false
+    },
+    {
+      name: "Traffic Management Planning",
+      slug: "traffic-management-planning",
+      shortDescription: "Professional traffic management planning and consultation",
+      fullDescription: "Comprehensive traffic management plan development, risk assessment, and regulatory compliance for major projects. Generally, a Traffic Control Plan is $110.00 each, with a 24 hour turn around.",
+      features: ["Traffic Management Plans (TMPs)", "Risk assessment and mitigation", "Regulatory compliance", "Authority approvals", "Ongoing plan updates"],
+      sortOrder: 5,
+      isActive: true,
+      featured: false
+    },
+    {
+      name: "Airport Traffic Control",
+      slug: "airport-traffic-control",
+      shortDescription: "Airport traffic control with security clearance",
+      fullDescription: "Specialized traffic management for airport construction, maintenance, and emergency situations with strict security protocols.",
+      features: ["ASIC certified controllers", "Security protocol compliance", "Runway safety procedures", "Emergency response protocols", "Coordination with air traffic control"],
+      sortOrder: 6,
+      isActive: true,
+      featured: false
+    },
+    {
+      name: "Sign Hire",
+      slug: "sign-hire",
+      shortDescription: "Our Signs can be hired short term, long term, delivered and picked up hassle free",
+      fullDescription: "Professional traffic signs available for hire with flexible terms. We offer a comprehensive range of RMS-approved signage for all traffic management needs. Our Signs can be hired short term, long term, delivered and picked up hassle free.",
+      features: ["Short term and long term hire options", "Delivered and picked up hassle-free", "RMS-approved signage", "Wide range of sign types available", "Competitive hire rates"],
+      sortOrder: 7,
+      isActive: true,
+      featured: false
     }
   ];
   totalCreated += await populateContent('Services', 'services', services);
   
-  // 2. Team Members (4 real members from original CMS)
-  const teamMembers = [
-    {
-      name: "Sarah Johnson",
-      position: "Operations Manager",
-      bio: "Sarah brings 15 years of traffic management experience and military logistics background to ensure smooth operations across all our projects.",
-      email: "sarah.johnson@nswtrafficcontrol.com.au",
-      phone: "0407 410 223",
-      linkedIn: "https://linkedin.com/in/sarah-johnson-nswtc",
-      sortOrder: 1
-    },
-    {
-      name: "Michael Chen",
-      position: "Senior Traffic Controller",
-      bio: "Michael is our lead field controller with extensive experience in complex urban construction projects and emergency response situations.",
-      email: "michael.chen@nswtrafficcontrol.com.au",
-      phone: "0407 410 223",
-      linkedIn: "https://linkedin.com/in/michael-chen-nswtc",
-      sortOrder: 2
-    },
-    {
-      name: "Emma Rodriguez",
-      position: "Traffic Management Planner",
-      bio: "Emma specializes in developing comprehensive traffic management plans and ensuring regulatory compliance for major infrastructure projects.",
-      email: "emma.rodriguez@nswtrafficcontrol.com.au",
-      phone: "0407 410 223",
-      linkedIn: "https://linkedin.com/in/emma-rodriguez-nswtc",
-      sortOrder: 3
-    },
-    {
-      name: "David Thompson",
-      position: "Emergency Response Coordinator",
-      bio: "David leads our 24/7 emergency response team with a background in emergency services and rapid deployment protocols.",
-      email: "david.thompson@nswtrafficcontrol.com.au",
-      phone: "0407 410 223",
-      linkedIn: "https://linkedin.com/in/david-thompson-nswtc",
-      sortOrder: 4
-    }
-  ];
-  totalCreated += await populateContent('Team Members', 'team-members', teamMembers);
+  // 2. Team Members - REMOVED (commented out on website)
   
   // 3. Core Values (4 values from original CMS)
   const coreValues = [
@@ -480,8 +481,7 @@ async function main() {
   console.log('\n===========================================');
   console.log(`✅ TOTAL CREATED: ${totalCreated} items`);
   console.log('\n📊 Final Content Summary:');
-  console.log('  • Services: 3 (real from original CMS)');
-  console.log('  • Team Members: 4 (real from original CMS)');
+  console.log('  • Services: 7 (matching website fallback)');
   console.log('  • Core Values: 4 (real from original CMS)');
   console.log('  • Our Process: 5 steps (real from original CMS)');
   console.log('  • Culture Values: 6 (real from original CMS)');
