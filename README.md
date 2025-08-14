@@ -1,37 +1,106 @@
-# Strapi example
+# NSW Traffic Control - Strapi CMS
 
-This example deploys self-hosted version of [Strapi](https://strapi.io/). Internally it uses a PostgreSQL database to store the data.
+Content Management System for NSW Traffic Control website, deployed on Railway with PostgreSQL.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/strapi?referralCode=milo)
+## 🌐 Production URLs
+
+- **CMS**: https://strapi-production-6dd1.up.railway.app
+- **Admin Panel**: https://strapi-production-6dd1.up.railway.app/admin
+- **API Base**: https://strapi-production-6dd1.up.railway.app/api
 
 ## ✨ Features
 
-- Strapi
-- Postgres
+- Strapi v5.18.1
+- PostgreSQL Database
+- 22 Content Types (14 collections, 8 single types)
+- Public API endpoints for frontend consumption
+- Media persistence between deployments
 
-## 💁‍♀️ How to use
+## 📡 Available API Endpoints
 
-- Click the Railway button 👆
-- Add the environment variables
-- Media will automatically be persisted between deploys!
+### Collection Types (with content)
+- `GET /api/services` - Traffic control services (11 entries)
+- `GET /api/testimonials` - Client testimonials (7 entries)
+- `GET /api/team-members` - Team member profiles (6 entries)
+- `GET /api/faqs` - Frequently asked questions (6 entries)
+- `GET /api/core-values` - Company core values (4 entries)
+- `GET /api/our-processes` - Service process steps (4 entries)
+- `GET /api/blog-posts` - Blog articles (3 entries)
+- `GET /api/job-openings` - Career opportunities (3 entries)
 
-## 💻 Developing locally
+### Collection Types (ready for content)
+- `GET /api/culture-values`
+- `GET /api/case-studies`
+- `GET /api/resources`
+- `GET /api/benefits`
+- `GET /api/application-steps`
+- `GET /api/career-faqs`
 
-When developing locally this Strapi template will connect to the Postgres server from its public [TCP Proxy](https://docs.railway.app/deploy/exposing-your-app#tcp-proxying)
+## 💻 Local Development
 
-- Enable the feature flag `Template Service Eject` in the [Feature Flags](https://railway.app/account/feature-flags) menu
-- Within the service settings of the Strapi service click the `Eject` button on the upstream repository
-- Clone that newly created repository locally
-- Install Strapi's dependencies with `yarn install` or `npm install`
-- Install the Railway CLI
-    - Instructions for that can be found [here](https://docs.railway.app/develop/cli#installation)
-    - If this is your first time using the CLI make sure to login with `railway login`
-- Within the local repository run `railway link` to link the local repository to the Strapi service on Railway
-- Start Strapi for development with `railway run yarn run develop` or `railway run npm run develop`
-    - This command will run Strapi in development mode with the service variables available locally
-- Open your browser to `http://127.0.0.1:1337/admin`
+1. **Clone the repository**
+   ```bash
+   git clone [repository-url]
+   cd strapi
+   ```
 
-## 📝 Notes
+2. **Install dependencies**
+   ```bash
+   yarn install
+   ```
 
-- After your app is deployed, visit the `/admin` endpoint to create your admin user.
-- If you want to use npm with this project make sure you delete the `yarn.lock` file after you have ran `npm install`
+3. **Set up Railway CLI**
+   ```bash
+   # Install Railway CLI (if not already installed)
+   # See: https://docs.railway.app/develop/cli#installation
+   
+   # Login to Railway
+   railway login
+   
+   # Link to the project
+   railway link
+   ```
+
+4. **Run development server**
+   ```bash
+   # This connects to Railway's PostgreSQL database
+   railway run yarn develop
+   ```
+
+5. **Access local admin**
+   - Open http://127.0.0.1:1337/admin
+
+## 🛠️ Scripts
+
+See `scripts/README.md` for documentation on available utility scripts.
+
+## 📝 Admin Panel Setup
+
+Single types need to be configured manually in the admin panel:
+1. Navigate to Content Manager > Single Types
+2. Create entries for:
+   - Company Info
+   - Contact Info
+   - Homepage Settings
+   - About Page Settings
+   - Services Page Settings
+   - Careers Page Settings
+   - Contact Page Settings
+   - Website Settings
+
+## 🚀 Deployment
+
+The main branch automatically deploys to Railway. The deployment includes:
+- Automatic builds using Railway's builder
+- Database migrations
+- Media persistence
+- Environment variable management
+
+## 📦 Environment Variables
+
+Required environment variables (configured in Railway):
+- `DATABASE_URL` - PostgreSQL connection string
+- `APP_KEYS` - Application security keys
+- `HOST` - Server host (0.0.0.0)
+- `PORT` - Server port (1337)
+- `URL` - Public application URL
