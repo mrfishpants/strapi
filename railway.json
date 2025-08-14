@@ -2,10 +2,5 @@
     "$schema": "https://backboard.railway.app/railway.schema.json",
     "build": {
         "builder": "RAILPACK"
-    },
-    "deploy": {
-        "healthcheckPath": "/health",
-        "healthcheckTimeout": 300,
-        "restartPolicyType": "ON_FAILURE"
     }
 }

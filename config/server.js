@@ -8,11 +8,5 @@ module.exports = ({ env }) => ({
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
   url: env('URL', 'http://localhost:1337'),
-  proxy: true,
-  logger: {
-    level: env('LOG_LEVEL', 'info'),
-    updates: {
-      enabled: env.bool('STRAPI_DISABLE_UPDATE_NOTIFICATION', true),
-    },
-  },
+  proxy: true
 });
