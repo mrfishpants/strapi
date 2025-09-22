@@ -58,6 +58,9 @@
     },
     "keyRequirements": {
       "type": "richtext"
+    },
+    "whatWeOffer": {
+      "type": "richtext"
     }
   }
 }
