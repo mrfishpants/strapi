@@ -1071,6 +1071,7 @@ export interface ApiJobOpeningJobOpening extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    aboutYou: Schema.Attribute.RichText;
     applicationDeadline: Schema.Attribute.Date;
     benefits: Schema.Attribute.RichText;
     createdAt: Schema.Attribute.DateTime;
@@ -1079,6 +1080,8 @@ export interface ApiJobOpeningJobOpening extends Struct.CollectionTypeSchema {
     department: Schema.Attribute.String;
     description: Schema.Attribute.RichText;
     isActive: Schema.Attribute.Boolean;
+    keyRequirements: Schema.Attribute.RichText;
+    keyResponsibilities: Schema.Attribute.RichText;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

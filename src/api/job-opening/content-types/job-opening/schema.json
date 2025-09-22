@@ -23,7 +23,11 @@
     },
     "type": {
       "type": "enumeration",
-      "enum": ["full-time", "part-time", "casual"]
+      "enum": [
+        "full-time",
+        "part-time",
+        "casual"
+      ]
     },
     "department": {
       "type": "string"
@@ -32,6 +36,12 @@
       "type": "richtext"
     },
     "requirements": {
+      "type": "richtext"
+    },
+    "aboutYou": {
+      "type": "richtext"
+    },
+    "keyResponsibilities": {
       "type": "richtext"
     },
     "benefits": {
@@ -45,6 +55,9 @@
     },
     "sortOrder": {
       "type": "integer"
+    },
+    "keyRequirements": {
+      "type": "richtext"
     }
   }
 }
