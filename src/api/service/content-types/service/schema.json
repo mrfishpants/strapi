@@ -14,19 +14,19 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": true,
       "minLength": 3,
-      "maxLength": 100
+      "maxLength": 100,
+      "required": true
     },
     "slug": {
       "type": "uid",
-      "required": true,
-      "targetField": "name"
+      "targetField": "name",
+      "required": true
     },
     "shortDescription": {
       "type": "string",
-      "required": true,
-      "maxLength": 200
+      "maxLength": 200,
+      "required": true
     },
     "fullDescription": {
       "type": "richtext"
@@ -34,7 +34,9 @@
     "icon": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "features": {
       "type": "json"
@@ -52,6 +54,17 @@
     "featured": {
       "type": "boolean",
       "default": false
+    },
+    "category": {
+      "type": "enumeration",
+      "required": true,
+      "default": "general",
+      "enum": [
+        "traffic-management",
+        "planning",
+        "emergency",
+        "general"
+      ]
     }
   }
 }
