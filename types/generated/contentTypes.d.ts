@@ -1211,6 +1211,11 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    catagory: Schema.Attribute.Enumeration<
+      ['traffic-management', 'planning', 'emergency', 'general']
+    > &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'general'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1268,8 +1273,7 @@ export interface ApiServicesPageSettingServicesPageSetting
     howWeWorkSection: Schema.Attribute.Component<
       'page-sections.section-header',
       false
-    > &
-      Schema.Attribute.Required;
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

@@ -23,7 +23,7 @@ export interface PageSectionsSectionHeader extends Struct.ComponentSchema {
   };
   attributes: {
     subtitle: Schema.Attribute.Text;
-    title: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String;
   };
 }
 
