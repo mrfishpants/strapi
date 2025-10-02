@@ -1211,7 +1211,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    catagory: Schema.Attribute.Enumeration<
+    category: Schema.Attribute.Enumeration<
       ['traffic-management', 'planning', 'emergency', 'general']
     > &
       Schema.Attribute.Required &
@@ -1222,7 +1222,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     featured: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     features: Schema.Attribute.JSON;
     fullDescription: Schema.Attribute.RichText;
-    icon: Schema.Attribute.Media<'images'>;
+    icon: Schema.Attribute.String;
     isActive: Schema.Attribute.Boolean &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<true>;

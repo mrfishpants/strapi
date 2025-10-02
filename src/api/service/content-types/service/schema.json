@@ -31,13 +31,6 @@
     "fullDescription": {
       "type": "richtext"
     },
-    "icon": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "features": {
       "type": "json"
     },
@@ -65,6 +58,9 @@
         "emergency",
         "general"
       ]
+    },
+    "icon": {
+      "type": "string"
     }
   }
 }
