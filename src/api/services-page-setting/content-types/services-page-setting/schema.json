@@ -14,15 +14,15 @@
   "attributes": {
     "servicesSection": {
       "type": "component",
-      "repeatable": false,
       "component": "page-sections.section-header",
+      "repeatable": false,
       "required": true
     },
     "howWeWorkSection": {
       "type": "component",
-      "repeatable": false,
       "component": "page-sections.section-header",
-      "required": true
+      "repeatable": false,
+      "required": false
     }
   }
 }
